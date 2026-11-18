@@ -4,7 +4,7 @@ title: PORTFOLIO M2CIBERSEGURIDAD
 
 # M2CIBERSEGURIDAD
 
-Soy M2C, un estudiante de Ciberseguridad y Junior Pentester que lleva 2 años resolviendo problemas y formandome en varios campos de la Ciber. 
+Soy M2C, un estudiante de Ciberseguridad y Junior Pentester que lleva 2 años resolviendo problemas y formándome en varios campos de la Ciber. 
 
 Aquí reúno proyectos prácticos de seguridad defensiva y de seguridad en sistemas con IA, integrando la IA con todos los ejecutables en local y documentando los resultados y sus limitaciones. (a veces, bastante, la IA nos engaña)
 
@@ -35,6 +35,7 @@ Estudiante de Ciberseguridad interesado en aplicar la IA, Junior Pentester, e in
 - Python, Git y GitHub
 - Linux (Kali) y PowerShell
 - Análisis de correo y de tráfico de red
+- Analisis de IA (Claude, ChatGPT, Ollama, qwen3, ...)
 
 ## Contacto
 
