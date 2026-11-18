@@ -1,0 +1,32 @@
+---
+title: Portfolio de ciberseguridad
+---
+
+# Portfolio de ciberseguridad
+
+Estudiante de ciberseguridad. Aquí reúno proyectos prácticos de seguridad defensiva y de seguridad en sistemas con IA, todos ejecutables en local y documentados con sus limitaciones.
+
+## Proyectos
+
+### 1. Analizador de phishing con IA local
+Script en Python que extrae cabeceras, URLs e IPs de un correo `.eml` y genera un informe tipo SOC con un modelo de lenguaje local (Llama 3.2 vía Ollama). Documenta los errores del modelo y por qué su informe debe revisarlo una persona.
+
+**Tecnologías:** Python, expresiones regulares, Ollama.
+[Ver código y documentación](https://github.com/m2ciber/analizador-phishing)
+
+### 2. Detector de intrusiones de red con Machine Learning
+Prototipo de NIDS con Random Forest (scikit-learn) que clasifica flujos de red en tráfico normal, escaneo de puertos, fuerza bruta SSH y DDoS. Usa datos sintéticos y lo indica expresamente: demuestra el flujo de trabajo completo, no un rendimiento en redes reales.
+
+**Tecnologías:** Python, pandas, scikit-learn.
+[Ver código y documentación](https://github.com/m2ciber/detector-trafico-ml)
+
+### 3. Laboratorio de prompt injection y defensa en dos capas
+Pruebas de ataques de prompt injection (OWASP LLM01) y fuga de información (LLM06) contra un asistente local, con un firewall de entrada y salida. Comparo dos modelos: uno resiste los ataques y el más pequeño entrega las credenciales (ficticias) sin protección.
+
+**Tecnologías:** Python, Ollama, regex, registro de auditoría en JSON.
+[Ver código y documentación](https://github.com/m2ciber/lab-prompt-injection)
+
+## Contacto
+
+- GitHub: [github.com/m2ciber](https://github.com/m2ciber)
+- Linkedin https://www.linkedin.com/in/m2c-ciberseguridad-820744342/
