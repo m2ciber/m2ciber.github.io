@@ -1,8 +1,8 @@
 ---
-title: Portfolio de ciberseguridad
+title: M2CIBERSEGURIDAD PORTFOLIO
 ---
 
-# PORTFOLIO DE M2CIBERSEGURIDAD
+# PORTFOLIO
 
 Soy Manu, un estudiante de Ciberseguridad y Junior Pentester llevo 2 años resolviendo problemas y formandome en varios campos de la Ciber. 
 Aquí reúno proyectos prácticos de seguridad defensiva y de seguridad en sistemas con IA, integrando la IA con todos ejecutables en local y documentados con sus limitaciones. (a veces, bastante, la IA nos engaña)
@@ -38,4 +38,4 @@ Estudiante de Ciberseguridad interesado en aplicar la IA, Junior Pentester, e in
 ## Contacto
 
 - GitHub: [github.com/m2ciber](https://github.com/m2ciber)
-- Linkedin [https://www.linkedin.com/in/m2c-ciberseguridad-820744342/] (https://www.linkedin.com/in/m2c-ciberseguridad-820744342/)
+- Linkedin [https://www.linkedin.com/in/m2c-ciberseguridad-820744342] (https://www.linkedin.com/in/m2c-ciberseguridad-820744342)
