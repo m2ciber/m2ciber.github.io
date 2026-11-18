@@ -2,9 +2,10 @@
 title: Portfolio de ciberseguridad
 ---
 
-# Portfolio de ciberseguridad
+# PORTFOLIO DE M2CIBERSEGURIDAD
 
-Estudiante de ciberseguridad. Aquí reúno proyectos prácticos de seguridad defensiva y de seguridad en sistemas con IA, todos ejecutables en local y documentados con sus limitaciones.
+Soy Manu, un estudiante de Ciberseguridad y Junior Pentester llevo 2 años resolviendo problemas y formandome en varios campos de la Ciber. 
+Aquí reúno proyectos prácticos de seguridad defensiva y de seguridad en sistemas con IA, integrando la IA con todos ejecutables en local y documentados con sus limitaciones. (a veces, bastante, la IA nos engaña)
 
 ## Proyectos
 
@@ -26,7 +27,15 @@ Pruebas de ataques de prompt injection (OWASP LLM01) y fuga de información (LLM
 **Tecnologías:** Python, Ollama, regex, registro de auditoría en JSON.
 [Ver código y documentación](https://github.com/m2ciber/lab-prompt-injection)
 
+## Sobre mí
+Estudiante de Ciberseguridad interesado en aplicar la IA, Junior Pentester, e investigador de IA y forense.
+
+## Habilidades
+- Python, Git y GitHub
+- Linux (Kali) y PowerShell
+- Análisis de correo y de tráfico de red
+
 ## Contacto
 
 - GitHub: [github.com/m2ciber](https://github.com/m2ciber)
-- Linkedin https://www.linkedin.com/in/m2c-ciberseguridad-820744342/
+- Linkedin [https://www.linkedin.com/in/m2c-ciberseguridad-820744342/] (https://www.linkedin.com/in/m2c-ciberseguridad-820744342/)
