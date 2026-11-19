@@ -17,9 +17,9 @@ Script en Python que extrae cabeceras, URLs e IPs de un correo `.eml` y genera u
 [Ver código y documentación](https://github.com/m2ciber/analizador-phishing)
 
 ### 2. Detector de intrusiones de red con Machine Learning
-Prototipo de NIDS con Random Forest (scikit-learn) que clasifica flujos de red en tráfico normal, escaneo de puertos, fuerza bruta SSH y DDoS. Usa datos sintéticos y lo indica expresamente: demuestra el flujo de trabajo completo, no un rendimiento en redes reales.
+Clasificador Random Forest (scikit-learn) evaluado con el dataset real NSL-KDD: entrenado con `KDDTrain+` y probado con `KDDTest+`, alcanza un 78 % de acierto, con pocas falsas alarmas (2,7 %) pero dejando pasar el 37 % de los ataques. El README documenta los resultados con sus limitaciones y los siguientes pasos para mejorarlos. Incluye también una demo con datos sintéticos.
 
-**Tecnologías:** Python, pandas, scikit-learn.
+**Tecnologías:** Python, pandas, scikit-learn, NSL-KDD.
 [Ver código y documentación](https://github.com/m2ciber/detector-trafico-ml)
 
 ### 3. Laboratorio de prompt injection y defensa en dos capas
