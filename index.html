@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M2C, portfolio de ciberseguridad y privacidad</title>
+<meta name="description" content="Portfolio de M2C: estudiante de ciberseguridad y junior pentester. Proyectos de seguridad defensiva y seguridad en sistemas con IA.">
+<meta name="theme-color" content="#1F2C42">
+<meta property="og:title" content="M2C, portfolio de ciberseguridad y privacidad">
+<meta property="og:description" content="Proyectos prácticos de seguridad defensiva y seguridad en sistemas con IA.">
+<meta property="og:image" content="https://m2ciber.github.io/assets/marca.png">
+<link rel="icon" href="assets/escudo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1F2C42;--deep:#18233A;--cyan:#2BE6F0;--blue:#1A2BE8;--white:#FFFFFF;--muted:#A8B5CC;--line:#34445F;
+  --brand:linear-gradient(180deg,#19ECF2 0%,#12A5E8 55%,#1A2BE8 100%)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--navy);color:var(--white);font:400 1.0625rem/1.65 "Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:68rem;margin:0 auto;padding:0 clamp(1.25rem,5vw,3rem)}
+a{color:var(--cyan);text-underline-offset:.2em}
+a:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+h1,h2,h3{font-family:Montserrat,system-ui,sans-serif;margin:0}
+
+/* Barra superior */
+.top{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 0}
+.mark img{display:block;width:2.75rem;height:2.75rem;border-radius:.6rem}
+.top nav{display:flex;gap:1.75rem;font-weight:600}
+.top nav a{color:var(--muted);text-decoration:none}
+.top nav a:hover{color:var(--white)}
+
+/* Portada */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,25rem);gap:clamp(2rem,6vw,5rem);align-items:center;padding:clamp(2rem,6vw,4.5rem) 0 clamp(3rem,7vw,5rem)}
+.hero h1{font-weight:800;font-size:clamp(4.5rem,18vw,10rem);line-height:.85;letter-spacing:-.04em;margin-bottom:1.5rem}
+.role{font-family:Montserrat,system-ui,sans-serif;font-weight:700;font-size:clamp(1.3rem,3.2vw,2rem);line-height:1.25;margin:0 0 1.25rem}
+.intro{max-width:34rem;color:var(--muted);margin:0 0 2rem}
+.btn{display:inline-block;padding:.75rem 1.5rem;border:2px solid var(--cyan);color:var(--cyan);font-weight:600;text-decoration:none;transition:background .2s,color .2s}
+.btn:hover{background:var(--cyan);color:var(--navy)}
+
+/* Logo: un barrido de escáner lo revela una sola vez al cargar */
+.brand{position:relative;margin:0}
+.brand img{display:block;width:100%;height:auto;
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 66%,transparent 99%);mask-image:radial-gradient(ellipse at center,#000 66%,transparent 99%);
+  animation:reveal 1.6s cubic-bezier(.45,0,.2,1) .25s both}
+.brand::after{content:"";position:absolute;left:8%;right:8%;top:0;height:3px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);box-shadow:0 0 18px 4px rgba(43,230,240,.55);opacity:0;animation:sweep 1.6s cubic-bezier(.45,0,.2,1) .25s both}
+@keyframes reveal{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes sweep{0%{top:0;opacity:1}90%{opacity:1}100%{top:100%;opacity:0}}
+
+/* Secciones */
+section{padding:clamp(2.5rem,6vw,4.5rem) 0}
+h2{font-weight:800;font-size:clamp(2rem,5vw,3rem);letter-spacing:-.02em;margin-bottom:2.25rem}
+h2::after{content:"";display:block;width:3.5rem;height:4px;margin-top:.9rem;background:var(--brand)}
+
+/* Proyectos */
+.projects{border-top:1px solid var(--line)}
+.project{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:1rem clamp(1.5rem,5vw,4rem);padding:2.1rem 0;border-bottom:1px solid var(--line);transition:padding-left .25s ease}
+.project::before{content:"";position:absolute;left:0;top:2.1rem;bottom:2.1rem;width:3px;background:var(--brand);opacity:0;transition:opacity .25s ease}
+.project:hover{padding-left:1.25rem}
+.project:hover::before{opacity:1}
+.project h3{font-weight:700;font-size:clamp(1.4rem,2.8vw,1.9rem);line-height:1.15;transition:color .25s ease}
+.project:hover h3{color:var(--cyan)}
+.project p{margin:0 0 1rem;max-width:34rem;color:#D5DCEA}
+.project code{color:var(--white)}
+.tags{list-style:none;margin:1rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem .5rem;color:var(--muted);font-size:.9rem}
+.tags li{border:1px solid var(--line);padding:.05rem .65rem;border-radius:2px}
+.go{font-weight:600}
+
+/* Contacto */
+.contact{background:var(--deep)}
+.contact p{max-width:32rem;color:var(--muted);margin:0 0 1.25rem}
+.links{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem 2rem;font-family:Montserrat,system-ui,sans-serif;font-weight:700;font-size:clamp(1.3rem,3vw,1.9rem)}
+footer{padding:1.75rem 0 2.5rem;color:var(--muted);font-size:.9rem}
+
+@media (max-width:46rem){
+  .hero{grid-template-columns:1fr}
+  .brand{max-width:18rem}
+  .project{grid-template-columns:1fr;gap:.75rem}
+  .project:hover{padding-left:0}
+  .project::before{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .brand img{animation:none}
+  .brand::after{display:none}
+  .project,.project h3,.btn{transition:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <a class="mark" href="#" aria-label="Inicio"><img src="assets/escudo.png" alt="Escudo de M2C"></a>
+    <nav aria-label="Principal"><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav>
+  </div>
+
+  <header class="hero">
+    <div>
+      <h1>M2C</h1>
+      <p class="role">Estudiante de Ciberseguridad y Junior Pentester.</p>
+      <p class="intro">Llevo 2 años resolviendo problemas y formándome en varios campos de la ciberseguridad. Aquí reúno proyectos prácticos de seguridad defensiva y de seguridad en sistemas con IA, todos ejecutables en local y documentados con sus limitaciones.</p>
+      <a class="btn" href="#proyectos">Ver proyectos</a>
+    </div>
+    <figure class="brand">
+      <img src="assets/marca.png" width="900" height="850" alt="Logotipo de M2C: un escudo con las letras M y 2 y el texto Ciberseguridad y Privacidad">
+    </figure>
+  </header>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="projects">
+
+      <article class="project">
+        <div>
+          <h3>Analizador de phishing con IA local</h3>
+          <ul class="tags"><li>Python</li><li>Ollama</li><li>Expresiones regulares</li></ul>
+        </div>
+        <div>
+          <p>Analiza correos <code>.eml</code> en dos capas: comprobaciones automáticas verificables con código (remitente, SPF, DKIM, enlaces con IP, lenguaje de urgencia) y un informe redactado por un modelo local. Documenta los fallos del modelo y por qué su informe debe revisarlo una persona.</p>
+          <a class="go" href="https://github.com/m2ciber/analizador-phishing">Ver código y documentación</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div>
+          <h3>Detector de intrusiones de red con Machine Learning</h3>
+          <ul class="tags"><li>Python</li><li>pandas</li><li>scikit-learn</li><li>NSL-KDD</li></ul>
+        </div>
+        <div>
+          <p>Random Forest evaluado con el dataset real NSL-KDD: 78&nbsp;% de acierto en la prueba oficial, 2,7&nbsp;% de falsas alarmas y un 37&nbsp;% de ataques sin detectar. El README recoge los resultados, sus límites y los siguientes pasos.</p>
+          <a class="go" href="https://github.com/m2ciber/detector-trafico-ml">Ver código y documentación</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div>
+          <h3>Laboratorio de prompt injection y defensa</h3>
+          <ul class="tags"><li>Python</li><li>Ollama</li><li>Registro de auditoría</li></ul>
+        </div>
+        <div>
+          <p>Ataques de prompt injection (OWASP LLM01) y fuga de información (LLM06) contra un asistente local, con un firewall de entrada y otro de salida. Con dos modelos comparados: uno resiste y el más pequeño entrega las credenciales ficticias cuando no hay protección.</p>
+          <a class="go" href="https://github.com/m2ciber/lab-prompt-injection">Ver código y documentación</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</div>
+
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <h2>Contacto</h2>
+    <p>Si quieres comentar alguno de los proyectos, escríbeme por LinkedIn o revisa el código en GitHub.</p>
+    <ul class="links">
+      <li><a href="https://github.com/m2ciber">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/m2c-ciberseguridad-820744342" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Portfolio de M2C. Los correos, claves y direcciones de los proyectos de ejemplo son ficticios.</div>
+</footer>
+</body>
+</html>
