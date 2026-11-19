@@ -140,7 +140,7 @@ footer{padding:1.75rem 0 2.5rem;color:var(--muted);font-size:.9rem}
           <ul class="tags"><li>Python</li><li>Ollama</li><li>Registro de auditoría</li></ul>
         </div>
         <div>
-          <p>Ataques de prompt injection (OWASP LLM01) y fuga de información (LLM06) contra un asistente local, con un firewall de entrada y otro de salida. Con dos modelos comparados: uno resiste y el más pequeño entrega las credenciales ficticias cuando no hay protección.</p>
+          <p>Ataques de prompt injection (OWASP LLM01) y fuga de información (LLM06) contra un asistente local, con un firewall de entrada y otro de salida. Un modelo pequeño entrega las credenciales ficticias sin protección. Una prueba directa de los filtros muestra que el de coincidencia exacta solo detecta 2 de 9 formas de ocultar la clave, y que uno que decodifica detecta 7 de 9. El README documenta los límites.</p>
           <a class="go" href="https://github.com/m2ciber/lab-prompt-injection">Ver código y documentación</a>
         </div>
       </article>
