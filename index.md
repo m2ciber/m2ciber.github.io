@@ -11,7 +11,7 @@ Aquí reúno proyectos prácticos de seguridad defensiva y de seguridad en siste
 ## Proyectos
 
 ### 1. Analizador de phishing con IA local
-Script en Python que extrae cabeceras, URLs e IPs de un correo `.eml` y genera un informe tipo SOC con un modelo de lenguaje local (Llama 3.2 vía Ollama). Documenta los errores del modelo y por qué su informe debe revisarlo una persona.
+Script en Python que analiza correos `.eml` en dos capas: comprobaciones automáticas verificables con código (Reply-To y Return-Path distintos del remitente, SPF y DKIM fallidos, enlaces con IP, lenguaje de urgencia) y un informe redactado por un modelo local (Llama 3.2 vía Ollama). El README documenta los fallos del modelo, como un veredicto incoherente, y por qué su informe debe revisarlo una persona.
 
 **Tecnologías:** Python, expresiones regulares, Ollama.
 [Ver código y documentación](https://github.com/m2ciber/analizador-phishing)
