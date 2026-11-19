@@ -71,6 +71,10 @@ h2::after{content:"";display:block;width:3.5rem;height:4px;margin-top:.9rem;back
 .contact{background:var(--deep)}
 .contact p{max-width:32rem;color:var(--muted);margin:0 0 1.25rem}
 .links{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem 2rem;font-family:Montserrat,system-ui,sans-serif;font-weight:700;font-size:clamp(1.3rem,3vw,1.9rem)}
+.links a{display:inline-flex;align-items:center;gap:.6rem;text-decoration:none;transition:color .2s}
+.links a:hover span{text-decoration:underline;text-underline-offset:.2em}
+.links a:hover{color:var(--white)}
+.ico{width:1.1em;height:1.1em;flex:none}
 footer{padding:1.75rem 0 2.5rem;color:var(--muted);font-size:.9rem}
 
 @media (max-width:46rem){
@@ -119,7 +123,7 @@ footer{padding:1.75rem 0 2.5rem;color:var(--muted);font-size:.9rem}
         </div>
         <div>
           <p>Analiza correos <code>.eml</code> en tres capas: comprobaciones automáticas verificables con código, una puntuación de riesgo calculada con reglas y un informe redactado por un modelo local. Probado con 10 correos de ejemplo, detecta 4 de 5 phishing y marca por error 1 de 5 legítimos. El README documenta los fallos de las reglas y de la IA.</p>
-  
+          <a class="go" href="https://github.com/m2ciber/analizador-phishing">Ver código y documentación</a>
         </div>
       </article>
 
@@ -129,7 +133,7 @@ footer{padding:1.75rem 0 2.5rem;color:var(--muted);font-size:.9rem}
           <ul class="tags"><li>Python</li><li>pandas</li><li>scikit-learn</li><li>NSL-KDD</li></ul>
         </div>
         <div>
-          <p><p>Random Forest evaluado con el dataset real NSL-KDD. Con el umbral por defecto detecta el 63&nbsp;% de los ataques de la prueba oficial; ajustando el umbral sin mirar esa prueba sube al 88&nbsp;%, a cambio de pasar del 2,7&nbsp;% al 9,8&nbsp;% de falsas alarmas. El README recoge los resultados y sus límites.</p>
+          <p>Random Forest evaluado con el dataset real NSL-KDD. Con el umbral por defecto detecta el 63&nbsp;% de los ataques de la prueba oficial; ajustando el umbral sin mirar esa prueba sube al 88&nbsp;%, a cambio de pasar del 2,7&nbsp;% al 9,8&nbsp;% de falsas alarmas. El README recoge los resultados y sus límites.</p>
           <a class="go" href="https://github.com/m2ciber/detector-trafico-ml">Ver código y documentación</a>
         </div>
       </article>
@@ -153,12 +157,11 @@ footer{padding:1.75rem 0 2.5rem;color:var(--muted);font-size:.9rem}
 <section class="contact" id="contacto">
   <div class="wrap">
     <h2>Contacto</h2>
-    <p>Si quieres comentar alguno de los proyectos, escríbeme por LinkedIn, revisa el código en GitHub o encuéntrame en Instagram.</p>
+    <p>Si quieres comentar alguno de los proyectos, escríbeme por LinkedIn o Instagram, o revisa el código en GitHub.</p>
     <ul class="links">
-  <li><a href="https://github.com/m2ciber">GitHub</a></li>
-  <li><a href="https://www.linkedin.com/in/m2c-ciberseguridad-820744342" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-  <li><a href="https://www.instagram.com/m2ciberseguridad/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-</ul>
+      <li><a href="https://github.com/m2ciber" target="_blank" rel="noopener noreferrer"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>GitHub</span></a></li>
+      <li><a href="https://www.linkedin.com/in/m2c-ciberseguridad-820744342" target="_blank" rel="noopener noreferrer"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="4"/><path d="M7.5 10.5v6M7.5 7.5v.01M11.5 16.5v-6M11.5 13c0-1.5 1-2.5 2.5-2.5s2.5 1 2.5 2.5v3.5"/></svg><span>LinkedIn</span></a></li>
+      <li><a href="https://www.instagram.com/m2ciberseguridad/" target="_blank" rel="noopener noreferrer"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.3"/><path d="M17.4 6.6v.01"/></svg><span>Instagram</span></a></li>
     </ul>
   </div>
 </section>
